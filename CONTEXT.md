@@ -39,5 +39,9 @@ _Avoid_: queue, mailbox, spool
 The short keystroke tap typed into a recipient's pane to say "check your inbox". Carries no payload.
 _Avoid_: ping, wake
 
+**Retrier**:
+The short-lived process left behind whenever a message is delivered, repeating the nudge until the message is consumed or the recipient is gone. One per message.
+_Avoid_: daemon, watcher
+
 **Preamble**:
 The starting instructions a teammate's adapter injects — who it is, who its lead is, how to communicate — as opposed to the task instructions the caller supplies.
