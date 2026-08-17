@@ -1,0 +1,16 @@
+[package]
+name = "spawn-agent"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Spawn AI harnesses as teammates in tmux panes"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
